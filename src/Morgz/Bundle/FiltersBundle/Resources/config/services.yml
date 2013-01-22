@@ -1,0 +1,7 @@
+parameters:
+#    morgz_filters.example.class: Morgz\Bundle\FiltersBundle\Example
+
+services:
+#    morgz_filters.example:
+#        class: %morgz_filters.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

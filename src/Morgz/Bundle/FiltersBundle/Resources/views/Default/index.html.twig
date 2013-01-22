@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr><td>Fund Name</td></tr>
+    </thead>
+
+    <tbody>
+        {% for fund in funds %}
+            <tr>
+                <td>{{ fund.name }}</td>
+            </tr>
+
+            {% set arr=[1,2,3] %}
+            {% set shares = fund.getSharesByShareType(arr) %}
+            <tr>
+            {% for share in shares %}
+                <td>{{  share.name }}</td>
+            {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
